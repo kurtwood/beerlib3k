@@ -1,0 +1,56 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myBeerLabel">Create or edit a Beer</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="beer.id" readonly>
+        </div>
+        <div class="form-group">
+            <label for="field_beer_id">Beer_id</label>
+            <input type="number" class="form-control" name="beer_id" id="field_beer_id"
+                    ng-model="beer.beer_id"
+                    >
+        </div>
+        <div class="form-group">
+            <label for="field_name">Name</label>
+            <input type="text" class="form-control" name="name" id="field_name"
+                    ng-model="beer.name"
+                    >
+        </div>
+        <div class="form-group">
+            <label for="field_description">Description</label>
+            <input type="text" class="form-control" name="description" id="field_description"
+                    ng-model="beer.description"
+                    >
+        </div>
+        <div class="form-group">
+            <label for="field_type_id">Type_id</label>
+            <input type="number" class="form-control" name="type_id" id="field_type_id"
+                    ng-model="beer.type_id"
+                    >
+        </div>
+        <div class="form-group">
+            <label for="field_brewery_id">Brewery_id</label>
+            <input type="number" class="form-control" name="brewery_id" id="field_brewery_id"
+                    ng-model="beer.brewery_id"
+                    >
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span>Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || editForm.$submitted" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span>Save</span>
+        </button>
+    </div>
+</form>
