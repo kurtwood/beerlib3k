@@ -1,0 +1,62 @@
+
+<div>
+    <h2><span>Beer</span> {{beer.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Field</th>
+                <th>Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span>Beer_id</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{beer.beer_id}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Name</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{beer.name}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Description</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{beer.description}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Type_id</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{beer.type_id}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Brewery_id</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{beer.brewery_id}}</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+</div>

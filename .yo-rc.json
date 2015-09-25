@@ -1,0 +1,21 @@
+{
+  "generator-jhipster": {
+    "baseName": "beerlib3k",
+    "packageName": "com.braathebrann.beerlib3k",
+    "packageFolder": "com/braathebrann/beerlib3k",
+    "authenticationType": "oauth2",
+    "hibernateCache": "no",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": "no",
+    "useSass": true,
+    "buildTool": "gradle",
+    "frontendBuilder": "grunt",
+    "javaVersion": "8",
+    "enableTranslation": false,
+    "rememberMeKey": "89a28a6601b1e1ef7969049e28268333f5db75bd"
+  }
+}
